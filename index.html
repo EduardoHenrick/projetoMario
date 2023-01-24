@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="./src/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&family=Ubuntu:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    
+    <title>Super Mario Bros - O Filme</title>
+  </head>
+
+  <body>
+    <!-- PARTE DO VÍDEO DE FUNDO -->
+    <div class="fundo-video">
+      <video class="video" autoplay loop muted>
+        <source src="./src/video/video-mario.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- PARTE DO CABEÇALHO (HEADER) -->
+    <header class="cabecalho">
+      <a href="#">
+        <img
+          class="logo"
+          src="./src/img/logo-chapeu-mario.png"
+          alt="icone-mario"
+        />
+      </a>
+
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+
+          <li>
+            <a href="#">Detalhes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- PARTE PRINCIPAL (MAIN -->
+    <main class="conteiner">
+      <div class="informacoes">
+        <img
+          class="img-titulo"
+          src="./src/img/titulo.png"
+          alt="Título do Mario"
+        />
+        <p class="descricao">
+          Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar
+          no reino dos cogumelos, governado pela Princesa Peach, mas ameacado
+          pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os
+          lugares.
+        </p>
+        <button id="botao" class="botao-trailer" ">Veja o Trailer</button>
+      </div>
+
+      <img
+        class="mario"
+        src="./src/img/super-mario-chars.png"
+        alt="Foto do Mario"
+      />
+
+      <!-- MODAL DA PARTE PRINCIPAL -->
+      <div class="conteinerModal">
+        <div class="conteudoModal">
+          <span class="fecharModal">x</span>
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/cDNkh5WybZo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

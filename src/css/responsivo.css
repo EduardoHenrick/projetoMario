@@ -1,0 +1,66 @@
+/* MEDIA COM 1200PX PARA BAIXO */
+@media (max-width: 1200px) {
+  body {
+    background-color: #f44336;
+  }
+  .fundo-video {
+    display: none;
+  }
+
+  .conteiner {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    gap: 30px;
+  }
+
+  .mario {
+    max-width: 50%;
+  }
+
+  .conteiner .informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conteiner .descricao {
+    color: white;
+    text-align: center;
+  }
+
+  .conteiner .botao-trailer {
+    background-color: #263238;
+  }
+}
+
+/* MEDIA COM 500PX PARA BAIXO */
+@media (max-width: 500px) {
+  .cabecalho {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .conteiner .img-titulo {
+    max-width: 75%;
+  }
+
+  .conteinerModal .fecharModal {
+    width: 30px;
+    line-height: 30px;
+  }
+
+  .conteinerModal #video {
+    width: 300px;
+    height: 169px;
+  }
+}
+
+/* MEDIA COM 376PX PARA BAIXO */
+@media (max-width: 376px) {
+  .conteinerModal {
+    width: 250px;
+    height: 140px;
+  }
+}

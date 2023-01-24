@@ -1,0 +1,147 @@
+/* -------------CORPO DA JANELA DE VISUALIZAÇÃO------------- */
+body {
+  font-family: "poppins";
+}
+
+/* -------------PARTE DO VÍDEO DE FUNDO------------- */
+.fundo-video {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.fundo-video .video {
+  height: 100%;
+}
+
+.fundo-video::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8491771708683473) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+/* -------------PARTE DO CABEÇALHO (HEADER------------- */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.cabecalho .logo {
+  width: 65px;
+}
+
+.cabecalho .menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.cabecalho nav li a {
+  font-weight: bold;
+  color: #f0ffff;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.cabecalho li a:hover {
+  background-color: #d5011d;
+}
+
+/* -------------PARTE PRINCIPAL (MAIN)------------- */
+.conteiner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 132px);
+  padding: 0 30px 30px;
+}
+
+.conteiner .img-titulo {
+  max-width: 500px;
+}
+
+.conteiner .descricao {
+  color: white;
+  width: 85%;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.conteiner .botao-trailer {
+  background-color: #ff0021;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  text-transform: uppercase;
+  transition: 0.4s all ease-in-out;
+}
+
+.conteiner .botao-trailer:hover {
+  transform: scale(1.1);
+}
+
+/* -------------PARTE DO MODAL------------- */
+.conteinerModal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(51, 51, 51, 0.749);
+  visibility: hidden;
+}
+
+.conteudoModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-radius: 5px;
+  gap: 15px;
+}
+
+.fecharModal {
+  background-color: #fff;
+  color: #f03a17;
+  font-weight: bold;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.conteudoModal iframe {
+  border-width: 0;
+  width: 640px;
+  height: 360px;
+}
+
+.conteinerModal.aberto {
+  opacity: 1;
+  visibility: visible;
+}
